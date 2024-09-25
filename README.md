@@ -34,11 +34,13 @@ Navigate to the ClientApp folder and install the required dependencies.
 
 Open PowerShell in the ClientApp folder and run the following commands:
 
-Install Angular CLI globally (version 16)
+Install Angular CLI globally (version 16):
 npm install -g @angular/cli@16
 
-Install required packages for the Angular project
+Install required jwt package:
 npm install @angular/material @angular/forms @auth0/angular-jwt
+
+Install required bootstrap package:
 npm install bootstrap@5
 
 ### 4. Running the Angular Application
