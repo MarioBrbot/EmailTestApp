@@ -16,7 +16,7 @@ This project contains a .NET backend with an Angular frontend. Below are the ins
 
 Modify the `appsettings.json` file in the .NET project to include your server and database information.
 
-```json
+
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=YOUR_DATABASE_NAME;Trusted_Connection=True;"
