@@ -1,0 +1,49 @@
+<div class="d-flex justify-content-center align-items-center vh-100" style="background-color: #f7f9fc;">
+  <div class="card p-4 shadow-lg rounded-3 d-flex flex-column" style="max-width: 400px; width: 100%; background-color: #fff3e0; border: none;">
+    <h2 class="text-center mb-4" style="color: #ff6f61;">Login</h2>
+    <form (ngSubmit)="login()" class="d-flex flex-column align-items-center w-100" novalidate>
+      <div class="form-group mb-3 w-100">
+        <input
+          [(ngModel)]="username"
+          name="username"
+          class="form-control py-2 px-3"
+          style="border: 1px solid #ff6f61; border-radius: 8px;"
+          placeholder="Enter Username"
+          required
+        />
+        <div *ngIf="!username && submitted" class="text-danger mt-1">
+          Username is required
+        </div>
+      </div>
+      <div class="form-group mb-3 w-100">
+        <input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          class="form-control py-2 px-3"
+          style="border: 1px solid #ff6f61; border-radius: 8px;"
+          placeholder="Enter Password"
+          required
+        />
+        <div *ngIf="!password && submitted" class="text-danger mt-1">
+          Password is required
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-block w-100 mt-3"
+        style="background-color: #ff6f61; color: #fff; padding: 10px; border-radius: 8px; border: none; font-weight: bold;"
+      >
+        Login
+      </button>
+      <div *ngIf="errorMessage" class="text-danger text-center mt-3">
+        {{ errorMessage }}
+      </div>
+    </form>
+    <div class="card p-3 shadow-sm mt-4" style="background-color: #fff3e0; border: 1px solid #ff6f61; border-radius: 8px;">
+      <p style="font-size: small;">Test user: Username: "Test" Password: "Password1!"</p>
+      <p style="font-size: small;">Test user: Username: "User" Password: "Password1!"</p>
+    </div>
+  </div>
+</div>
+

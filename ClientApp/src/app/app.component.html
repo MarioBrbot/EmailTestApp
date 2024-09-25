@@ -1,0 +1,29 @@
+<div *ngIf="showNavbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+        <li class="nav-item me-3">
+          .NET Test App
+        </li>
+        <li class="nav-item me-3">
+          <button class="nav-link btn btn-primary" routerLink="/compose">Compose Email</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn btn-secondary" routerLink="/history">Email History</button>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngIf="authService.isAuthenticated()">
+          <button class="btn btn-danger" (click)="logout()">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+

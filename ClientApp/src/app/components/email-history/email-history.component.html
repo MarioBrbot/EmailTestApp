@@ -1,0 +1,28 @@
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Email History</h2>
+
+  <div *ngIf="emails.length > 0; else noEmails">
+    <div class="list-group">
+      <div *ngFor="let email of emails" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ email.subject }}</h5>
+          <small>{{ email.sentDate | date: 'short' }}</small>
+        </div>
+        <p class="mb-1"><strong>From:</strong> {{ email.fromEmailAddress }}</p>
+        <p class="mb-1"><strong>To:</strong> {{ email.toEmailAddress }}</p>
+        <p class="mb-1" *ngIf="email.ccEmailAddresses"><strong>CC:</strong> {{ email.ccEmailAddresses }}</p>
+        <p class="mb-1"><strong>Importance:</strong> {{ email.importance }}</p>
+        <p class="mb-1"><strong>Content:</strong> {{ email.emailContent }}</p>
+        <hr />
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noEmails>
+    <p class="text-center mt-4">No emails have been sent yet.</p>
+  </ng-template>
+</div>
+
+
+  

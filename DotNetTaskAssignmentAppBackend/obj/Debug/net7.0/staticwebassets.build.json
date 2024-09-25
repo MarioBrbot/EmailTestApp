@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "E6hdA1sxJeOsiEi1TQ2dryDksD0OEMRuDWB1PiUhj8Y=",
+  "Source": "DotNetTaskAssignmentAppBackend",
+  "BasePath": "_content/DotNetTaskAssignmentAppBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
