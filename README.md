@@ -1,11 +1,11 @@
 # EmailTestApp
-# My .NET and Angular Application
+# My .NET 7 and Angular 16 Application
 
-This project contains a .NET backend with an Angular frontend. Below are the instructions to set up the application, including database configuration, API testing, and Angular setup.
+This project contains a .NET 7 Web API backend and an Angular 16 frontend. Below are the instructions to set up the application, including database configuration, API testing, and Angular setup.
 
 ## Prerequisites
 
-- .NET SDK
+- .NET 7 SDK
 - Node.js
 - Angular CLI (v16 or later)
 - SQL Server
